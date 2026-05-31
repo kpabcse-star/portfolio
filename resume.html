@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathwik Prince | Resume</title>
+    <style>
+        /* Theme Variables */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #222222;
+            --card-bg: #f4f4f4;
+            --accent-color: #d4af37; /* Gold */
+            --nav-bg: #111111;
+            --nav-text: #ffffff;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --card-bg: #1e1e1e;
+        }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: var(--nav-bg);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: var(--accent-color);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .theme-btn {
+            background-color: var(--accent-color);
+            color: #111111;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Container Layout */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1.page-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .resume-section {
+            background-color: var(--card-bg);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .resume-section h2 {
+            color: var(--accent-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            font-size: 22px;
+        }
+
+        /* Timeline & List Styles */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .item-meta {
+            font-style: italic;
+            font-size: 14px;
+            opacity: 0.8;
+            margin: 5px 0 10px 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category strong {
+            color: var(--accent-color);
+        }
+
+        /* Action Buttons */
+        .actions {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: #111111;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">SP</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Scripts</a></li>
+            <li><a href="resume.html" style="color: var(--accent-color);">Resume</a></li>
+            <li><button class="theme-btn" onclick="toggleTheme()">Theme</button></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="page-title">Academic & Professional Resume</h1>
+
+        <!-- Education Section -->
+        <div class="resume-section">
+            <h2>Education</h2>
+            
+            <div class="item">
+                <p class="item-title">NRI Institute of Technology (Autonomous)</p>
+                <p class="item-meta">B.Tech in Computer Science and Engineering | Guntur | Aug 2024 - Expected 2028 (3rd Year, Sem 1)</p>
+            </div>
+
+            <div class="item">
+                <p class="item-title">Morning Star Junior / Degree College</p>
+                <p class="item-meta">Intermediate (Class 11 & 12 - MPC) | Phirangipuram | 2022 - 2024</p>
+                <p>Score: 734 / 1000 (Improved Class 11 performance to 308 via betterment exam)</p>
+            </div>
+
+            <div class="item">
+                <p class="item-title">Schooling Journey</p>
+                <p class="item-meta">Foundational & Secondary Education</p>
+                <ul>
+                    <li><strong>St. Ann's English Medium High School</strong> (Class 9-10, Bharat Pet, Guntur) - Passed with 462/600 in 2022</li>
+                    <li><strong>St. Ignatius English Medium High School</strong> (Class 6-8, Arundel Pet, Guntur)</li>
+                    <li><strong>St. Alphonsa English Medium High School</strong> (Class 3-5, Chiluvuru)</li>
+                    <li><strong>Yadava High School</strong> (Nursery-Class 3, Old Guntur)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Technical & Creative Skills -->
+        <div class="resume-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <p><strong>Programming Languages:</strong> Java (Core OOPs), Python, C (Logical Foundations), Basic HTML</p>
+                    <p><strong>Core Computer Science:</strong> Non-linear Data Structures (Trees & Graphs)</p>
+                </div>
+                <div class="skill-category">
+                    <p><strong>Creative Suite:</strong> Creative Writing, Screenplay Writing, Screenplay Formatting (WriterSolo)</p>
+                    <p><strong>Environments & Tools:</strong> Windows OS, Prompt Engineering (ChatGPT)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coursework Section -->
+        <div class="resume-section">
+            <h2>Academic Coursework (I-I to I-II)</h2>
+            <p>Data Structures, Differential Equations & Vector Calculus, Basic Electrical & Electronics Engineering (BEEE), Engineering Physics (EP), Engineering Graphics (EG).</p>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="resume-section">
+            <h2>Certifications & Workshops</h2>
+            
+            <div class="item">
+                <p class="item-title">Python Technical Workshop (2 Weeks)</p>
+                <p class="item-meta">August 2025</p>
+                <p>Developed a custom survey web application engineered for upcoming Community Service Projects (CSP).</p>
+            </div>
+
+            <div class="item">
+                <p class="item-title">Prompt Engineering Certification (3 Days)</p>
+                <p class="item-meta">Nexa Learning (Online Mode)</p>
+                <p>Mastered contextual prompting, prompt structures, and AI application flows utilizing ChatGPT.</p>
+            </div>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="resume-section">
+            <h2>Hobbies</h2>
+            <p>Analyzing and learning from educational and filmmaking content via YouTube videos.</p>
+        </div>
+
+        <!-- Download Button Placeholder -->
+        <div class="actions">
+            <a href="#" class="btn" onclick="alert('Link your PDF resume file here later!')">Download Full Resume PDF</a>
+        </div>
+    </div>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathwik Prince | Portfolio</title>
+    <style>
+        /* Theme Variables */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #222222;
+            --card-bg: #f4f4f4;
+            --accent-color: #d4af37; /* Gold */
+            --nav-bg: #111111;
+            --nav-text: #ffffff;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --card-bg: #1e1e1e;
+        }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: var(--nav-bg);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: var(--accent-color);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Theme Toggle Button */
+        .theme-btn {
+            background-color: var(--accent-color);
+            color: #111111;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 800px;
+            margin: 80px auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-color);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 20px;
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Contact Details */
+        .contact-info {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">SP</div>
+        <ul>
+            <li><a href="index.html" style="color: var(--accent-color);">Home</a></li>
+            <li><a href="projects.html">Scripts</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><button class="theme-btn" onclick="toggleTheme()">Theme</button></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="hero">
+        <!-- Profile Picture Placeholder -->
+        <img src="profile.jpg" alt="Sathwik Prince" class="profile-img">
+        
+        <h1>Sathwik Prince</h1>
+        <div class="title">CSE Student | Writer & Director</div>
+        
+        <p class="bio">
+            Welcome to my web portfolio! I am a Computer Science and Engineering student balancing the technical world of technology alongside my deep passion for creative writing and direction.
+        </p>
+
+        <div class="contact-info">
+            <p><strong>📍 Location:</strong> Guntur, Andhra Pradesh</p>
+            <p><strong>✉️ Email:</strong> <a href="mailto:kpabcse@gmail.com">kpabcse@gmail.com</a></p>
+            <p><strong>🔗 Professional:</strong> <a href="#" target="_blank">LinkedIn Profile</a></p>
+            <p><strong>💻 Code Vault:</strong> <a href="https://github.com" target="_blank">GitHub Profile</a></p>
+
+        </div>
+    </div>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
+
+</body>
+</html>

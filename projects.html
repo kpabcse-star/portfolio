@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathwik Cinematic Universe | Scripts</title>
+    <style>
+        /* Theme Variables */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #222222;
+            --card-bg: #f4f4f4;
+            --accent-color: #d4af37; /* Gold */
+            --nav-bg: #111111;
+            --nav-text: #ffffff;
+            --status-bg: #d4af37;
+            --status-text: #111111;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --card-bg: #1e1e1e;
+            --status-bg: #333333;
+            --status-text: #d4af37;
+        }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: var(--nav-bg);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: var(--accent-color);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .theme-btn {
+            background-color: var(--accent-color);
+            color: #111111;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Container Layout */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1.page-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 40px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        /* Script Cards */
+        .script-card {
+            background-color: var(--card-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .script-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .script-title {
+            font-size: 24px;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        .status-tag {
+            background-color: var(--status-bg);
+            color: var(--status-text);
+            padding: 5px 12px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 20px;
+            text-transform: uppercase;
+            border: 1px solid var(--accent-color);
+        }
+
+        .meta-info {
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+        .logline {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Universe Crossover Highlight Box */
+        .universe-box {
+            background: linear-gradient(135deg, #111111, #222222);
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            border: 2px solid var(--accent-color);
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .universe-box h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .universe-box p {
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">SP</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" style="color: var(--accent-color);">Scripts</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><button class="theme-btn" onclick="toggleTheme()">Theme</button></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="page-title">Screenplays & Creative Works</h1>
+        <p class="subtitle">THE SATHWIK CINEMATIC UNIVERSE (SCU)</p>
+
+        <!-- Script 1 -->
+        <div class="script-card">
+            <div class="script-header">
+                <h2 class="script-title">1. Alpha</h2>
+                <span class="status-tag">Script Completed</span>
+            </div>
+            <div class="meta-info">Genre: Psychological Thriller | Location: Vijayawada & Machilipatnam</div>
+            <p class="logline">
+                <strong>Logline:</strong> Andrea Phelosis is a fearless criminal lawyer practicing in Vijayawada who frequently consumes alcohol to cope with her high-stakes environment. Her world collides with Prasad, a man deeply terrified by her intense presence yet gradually growing to love her, after she stands up for him against a group of local goons humiliating him in his own office.
+            </p>
+        </div>
+
+        <!-- Script 2 -->
+        <div class="script-card">
+            <div class="script-header">
+                <h2 class="script-title">2. Man vs Guilty</h2>
+                <span class="status-tag">Script Completed</span>
+            </div>
+            <div class="meta-info">Genre: Drama / Psychological | Location: Coastal Andhra</div>
+            <p class="logline">
+                <strong>Logline:</strong> Ajay is a reckless bike racer whose life takes a sharp turn toward discipline and responsibility through his connection to his bike. Unbeknownst to him, his personal assistant Swapna is actually his cousin, harboring deep childhood resentment over a broken doll incident. Seeking vengeance, Swapna sabotages his progress by hiring men to burn his prized bike to ashes, getting him terminated from his professional deadline—only to find herself facing severe psychological guilt splashing water on her face in the washroom as she recalls how much he cared for her since childhood.
+            </p>
+        </div>
+
+        <!-- Script 3 -->
+        <div class="script-card">
+            <div class="script-header">
+                <h2 class="script-title">3. Greedy Love vs Lonely Man</h2>
+                <span class="status-tag">In Development</span>
+            </div>
+            <div class="meta-info">Genre: Action Thriller / Sequel-Prequel | Location: Machilipatnam</div>
+            <p class="logline">
+                <strong>Logline:</strong> Serving as both a prequel and direct sequel to <em>Man vs Guilty</em>, this story explores Ajay and Swapna's deep childhood bonds before tracing her father's toxic manipulation to marry her off to his personal choice, Rahul. While Ajay treats Rahul as a true friend, Rahul secretly treats him as a bitter enemy, using the old childhood doll incident to drive a wedge between the couple. Under immense family pressure, Swapna unexpectedly terminates Ajay from his company despite his massive support from 200 loyal employees, forcing a massive final confrontation.
+            </p>
+        </div>
+
+        <!-- Universe Crossover Feature -->
+        <div class="universe-box">
+            <h3>💥 The Grand SCU Crossover Climax</h3>
+            <p>
+                The climax peaks dynamically in the coastal town of <strong>Machilipatnam</strong> where Ajay and Rahul face off while Swapna watches silently from the audience, tears filling her eyes. Just as Ajay faces near-defeat, <strong>Lawyer Andrea Phelosis</strong> arrives on the scene. She tears down Rahul's false friend persona, exposing his deep criminal roots from scratch as an international militant in Iran. Witnessing a beaten Ajay, a broken Swapna screams emotionally for him to rise. Re-energised, Ajay stands up and definitively takes down Rahul using his licensed personal firearm.
+            </p>
+        </div>
+    </div>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
+
+</body>
+</html>
